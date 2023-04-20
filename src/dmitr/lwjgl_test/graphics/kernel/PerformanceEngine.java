@@ -57,7 +57,6 @@ public class PerformanceEngine implements Runnable {
     }
 
     private void sync() {
-        System.out.println(1);
         float loopSlot = 1f / window.getFPS();
         double end = timer.getLastTime() + loopSlot;
         while (Timer.getTime() < end) {
